@@ -24,3 +24,10 @@ insert into employee_info (id, name, salary)
 Select * from employee_info;
 
 insert into employee_info values (1, "adam", 25000);
+
+update employee_info
+set salary = 25000
+where id = 1;
+
+
+
