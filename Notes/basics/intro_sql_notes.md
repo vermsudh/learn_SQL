@@ -5,7 +5,7 @@ accessed. (Digital)
 
 DBMS: A software application used to manage our DB is called DBMS (Database
 Management System)
-![img.png](../screenshots/img.png)
+![img.png](../../screenshots/img.png)
 
 Types of Databases
 1) Relational DBMS
@@ -25,10 +25,10 @@ DELETE
 
 ## Database Structure
 
-![img_1.png](../screenshots/img_1.png)
+![img_1.png](../../screenshots/img_1.png)
 
 What is a TABLE?
-![img_2.png](../screenshots/img_2.png)
+![img_2.png](../../screenshots/img_2.png)
 
 From columns, we get to know about the structure or SCHEMA.
 
@@ -41,8 +41,8 @@ SCHEMA (Design of the database)
 
 #### CREATE A DATABASE
 
-![img_3.png](../screenshots/img_3.png)
-![img_4.png](../screenshots/img_4.png)
+![img_3.png](../../screenshots/img_3.png)
+![img_4.png](../../screenshots/img_4.png)
 
 
 In order to use a specific database, we write 'use database_name'
@@ -50,7 +50,7 @@ In order to use a specific database, we write 'use database_name'
 -----
 #### Creating a Table
 
-![img_5.png](../screenshots/img_5.png)
+![img_5.png](../../screenshots/img_5.png)
 --------
 
 How to Insert the data 
@@ -62,4 +62,4 @@ INSERT INTO student VALUES(2, "Sudhanshu", 25);
 How to print the table
 
 select * FROM student;
-![img_6.png](../screenshots/img_6.png)
+![img_6.png](../../screenshots/img_6.png)

@@ -99,7 +99,20 @@ drop database if exists store_db;
 -- salary
 -- Insert at least 5 employees from different departments.
 
+create database library_db;
+use library_db;
 
+create table books (
+	book_id int primary key,
+    title varchar(50),
+    author varchar(50),
+    price int, 
+    published_year int
+);
+
+drop database library_db;
+    
+    
 
 
 

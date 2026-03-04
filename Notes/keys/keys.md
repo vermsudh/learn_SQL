@@ -11,7 +11,7 @@ that refers to the primary key;
 There can be multiple Fk's 
 Fk.s can have duplicate and null values. 
 
-![img_16.png](../screenshots/img_16.png)
+![img_16.png](../../screenshots/img_16.png)
 
 
 --------
