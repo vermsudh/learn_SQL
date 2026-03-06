@@ -239,4 +239,39 @@ select distinct mode
 from payment 
 where city='Boston';
 
+--  MORE QUESTIONS FROM YT VIDEO
+
+-- Write a query to find avg marks in each city in ascending order.
+
+use college; 
+
+SELECT AVG(marks), city
+from student
+GROUP BY city
+ORDER BY AVG(marks) DESC;
+
+-- 
+
+-- FInd the total payment according to each payment method
+
+use xyz;
+
+SELECT mode, count(customer) as total_customer
+from payment 
+GROUP BY mode;
+
+
+--
+
+
+use college;
+
+SELECT * from student;
+
+SELECT grade, count(rollno)
+FROM student
+GROUP BY grade
+ORDER BY grade;
+
+
 
