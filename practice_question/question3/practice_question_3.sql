@@ -132,6 +132,111 @@ SELECT * FROM payment;
 SELECT MODE, MAX(customer)
 FROM PAYMENT 
 GROUP BY MODE
-ORDER BY MAX(customer) desc
+ORDER BY MAX(customer) desc;
+
+-- Find how many customers belong to each city.
+
+SELECT count(*), CITY
+FROM PAYMENT 
+GROUP BY city;
+
+-- Show the number of customers using each payment method, but display the result starting from the highest count to the lowest.
+
+SELECT COUNT(CUSTOMER), MODE
+FROM PAYMENT 
+GROUP BY MODE
+ORDER BY COUNT(CUSTOMER) DESC;
+
+SELECT mode, count(*) AS total_customer
+FROM PAYMENT 
+GROUP BY MODE
+ORDER BY COUNT(*) DESC;
+
+-- 3
+
+-- Display all records where the payment method is Credit Card and the customer lives in Boston.
+
+SELECT *
+FROM PAYMENT
+WHERE mode = 'Credit Card' AND city = 'Boston';
+
+-- 4
+
+-- Find the highest customer_id for every payment method.
+
+SELECT mode, MAX(customer_id) AS max_customer_id
+FROM PAYMENT
+GROUP BY MODE
+ORDER BY max_customer_id;
+
+-- 5
+
+-- List the cities that have more than one customer in the table.
+
+SELECT city, count(*) AS num_of_cust
+FROM payment 
+GROUP BY city
+HAVING num_of_cust > 1;
+
+-- 6
+
+-- Display the total number of customers in the table.
+
+SELECT COUNT(*) AS total_customer
+FROM payment;
+
+-- 7
+
+-- Find the number of different payment methods available in the table.
+
+SELECT mode as num_of_mode
+FROM payment
+GROUP BY mode;
+
+-- 8
+
+-- Display all customers whose customer_id is between 103 and 108.
+
+SELECT customer, customer_id
+FROM payment 
+WHERE customer_id >= 103 AND customer_id <= 108;
+
+SELECT customer, customer_id
+FROM payment 
+WHERE customer_id BETWEEN 103 AND 108;
+
+-- 9
+
+-- Find the city that appears the most in the table.
+
+SELECT count(*), city
+FROM payment 
+GROUP BY city
+ORDER BY count(*) DESC
+LIMIT 1;
+
+
+-- Explanation
+
+-- 1. COUNT(*)
+-- Counts how many rows belong to each city.
+
+-- 2. GROUP BY city
+-- Groups all records by city so the count is calculated per city.
+
+-- 3. ORDER BY city_count DESC
+-- Sorts the result so the city with the highest count comes first.
+
+-- 4. LIMIT 1
+-- Returns only the top city, which appears the most.
+
+
+-- 10
+
+-- Display the payment methods used by customers in Boston, without repeating the same method multiple times.
+
+select distinct mode
+from payment 
+where city='Boston';
 
 
