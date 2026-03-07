@@ -16,4 +16,7 @@ DELETE FROM STUDENT
 WHERE marks < 80;
  
  -- Delete the column for grades.
+ ALTER TABLE student
+ DROP COLUMN grade;
+ 
  
