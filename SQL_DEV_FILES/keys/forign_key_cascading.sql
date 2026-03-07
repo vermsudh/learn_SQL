@@ -41,5 +41,6 @@ SELECT * from teacher;
 -- This was all possible becasue of cascading the forign key.
 
 -- If we would like to change the data of the forign tbale when the parent table, we will have to use cascading foreign key.
--- 
+
+
 
