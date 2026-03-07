@@ -45,10 +45,27 @@ INNER JOIN course as c
 ON s.id = c.id;
 
 
+-- FULL JOIN
 
+SELECT * 
+FROM student as a
+LEFT JOIN course as b
+ON a.id = b.id
+UNION 
+SELECT *
+FROM student as b 
+RIGHT JOIN course as a 
+ON a.id = b.id;
 
+-- LEFT EXCLUSIVE JOIN
 
+SELECT * 
+FROM student as a
+LEFT JOIN course as b
+ON a.id = b.id
+WHERE b.id IS NULL;
 
+-- RIGHT EXCLUSIVE JOIN
 
 
 

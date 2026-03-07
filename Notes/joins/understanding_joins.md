@@ -71,6 +71,8 @@ We don't have full join in MYSQL, so we need to use LEFT JOIN and RIGTH JOIN
             LEFT AND RIGHT EXCLUSIVE JOIN
 ![img_52.png](../../screenshots/img_52.png)
 
+                FULL EXCLUSIVE JOIN
+
 
 
 
