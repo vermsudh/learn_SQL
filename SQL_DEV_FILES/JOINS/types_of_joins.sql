@@ -161,3 +161,7 @@ ON e.department_id = d.department_id
 LEFT JOIN salaries as s 
 ON s.emp_id = e.emp_id;
 
+-- ------------------------------------
+
+
+
