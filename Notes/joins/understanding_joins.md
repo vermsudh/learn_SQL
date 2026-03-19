@@ -73,6 +73,13 @@ We don't have full join in MYSQL, so we need to use LEFT JOIN and RIGTH JOIN
 
                 FULL EXCLUSIVE JOIN
 
+                SELF JOIN
+
+It is a regular join but the table is joined with itself.
+
+![img_7.png](img_7.png)
+
+![img_8.png](img_8.png)
 
 
 
